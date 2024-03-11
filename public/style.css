@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+
+  --corFundo: #1B1612;
+  --corRealce: #33271E;
+  --corDestaque: #C58537;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  color: #FFF;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  width: 100svw;
+  height: 100svh;
+  background-color: var(--corFundo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  height: 36px;
+  width: 100svw;
+  background: var(--corDestaque);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.warnings {
+  margin-top: 16px;
+  background: var(--corRealce);
+  width: 80svw;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
+.phrase {
+  margin-top: 16px;
+  background: var(--corRealce);
+  width: 80svw;
+  border-radius: 16px;
+  display: flex;
+  padding: 16px;
+  font-size: 0.8rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phrase h2 {
+  font-size: 0.7rem;
+  text-align: end;
+}
+
+li {
+  font-size: 16px;
+}
+
+.menus {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menu {
+  width: 100px;
+  height: 100px;
+  background-color: var(--corDestaque);
+  border-radius: 16px;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu:active {
+  background-color: #885c26;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 36px;
+  width: 100svw;
+  background: var(--corDestaque);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
